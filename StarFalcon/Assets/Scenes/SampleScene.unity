@@ -494,8 +494,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSpeed: 15
   ySpeed: 15
-  maxRangeLR: 6
+  maxRangeLR: 5
   maxRangeUD: 4
+  rotYawFactor: 7
+  rotPitchPosFactor: 9
+  rotPitchThrowFactor: 40
+  rotRollThrowFactor: -40
 --- !u!1 &1362172811
 GameObject:
   m_ObjectHideFlags: 0
