@@ -34,7 +34,7 @@ public class ShipController : MonoBehaviour
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         float xOffsetThisFrame = xThrow * xSpeed * Time.deltaTime;
         float rawNewXPos = Mathf.Clamp(transform.localPosition.x + xOffsetThisFrame, -maxRangeLR, maxRangeLR);
-
+    
         print(xOffsetThisFrame);
         transform.localPosition = new Vector3(rawNewXPos, transform.localPosition.y, transform.localPosition.z);
     }
@@ -44,7 +44,7 @@ public class ShipController : MonoBehaviour
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
         float yOffsetThisFrame = yThrow * ySpeed * Time.deltaTime;
         float rawNewYPos = Mathf.Clamp(transform.localPosition.y + yOffsetThisFrame, -maxRangeUD, maxRangeUD);
-
+       
         print(yOffsetThisFrame);
         transform.localPosition = new Vector3(transform.localPosition.x, rawNewYPos, transform.localPosition.z);
     }

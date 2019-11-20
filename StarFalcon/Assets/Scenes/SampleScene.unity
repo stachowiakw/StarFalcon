@@ -468,38 +468,12 @@ MonoBehaviour:
   progressStyle: 0
   pointToPointThreshold: 4
   target: {fileID: 963194228}
---- !u!1 &1281486394 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 475737065030317366, guid: 05d06d37597dbda47a2a165e8f6a19aa,
-    type: 3}
-  m_PrefabInstance: {fileID: 475737066724821588}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1281486395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 475737065030317367, guid: 05d06d37597dbda47a2a165e8f6a19aa,
     type: 3}
   m_PrefabInstance: {fileID: 475737066724821588}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1281486396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281486394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c20b0e462509fa44399eaa62f449a838, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xSpeed: 15
-  ySpeed: 15
-  maxRangeLR: 5
-  maxRangeUD: 4
-  rotYawFactor: 7
-  rotPitchPosFactor: 9
-  rotPitchThrowFactor: 40
-  rotRollThrowFactor: -40
 --- !u!1 &1362172811
 GameObject:
   m_ObjectHideFlags: 0
