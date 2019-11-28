@@ -55,19 +55,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DontDestroy.cs" />
-     <Compile Include="Assets\MusicPlayer.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-     <Compile Include="Assets\ShipController.cs" />
-     <Compile Include="Assets\SwapScenes.cs" />
-     <None Include="Assets\epyphany\ReadMe.txt" />
-     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+     <Compile Include="Assets\Asset Packs\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+     <Compile Include="Assets\Asset Packs\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\Asset Packs\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+     <Compile Include="Assets\Asset Packs\SampleScenes\Scripts\CameraSwitch.cs" />
+     <Compile Include="Assets\Asset Packs\SampleScenes\Scripts\LevelReset.cs" />
+     <Compile Include="Assets\Asset Packs\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+     <Compile Include="Assets\Asset Packs\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\ActivateTrigger.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\AlphaButtonClickMask.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\CameraRefocus.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\CurveControlledBob.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\DragRigidbody.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\EventSystemChecker.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\FollowTarget.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\FOVKick.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\FPSCounter.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\LerpControlledBob.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\ObjectResetter.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\PlatformSpecificContent.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\SmoothFollow.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\TimedObjectActivator.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\WaypointCircuit.cs" />
+     <Compile Include="Assets\Asset Packs\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\Scripts\DontDestroy.cs" />
+     <Compile Include="Assets\Scripts\ShipController.cs" />
+     <Compile Include="Assets\Scripts\SwapScenes.cs" />
+     <None Include="Assets\Asset Packs\epyphany\ReadMe.txt" />
+     <None Include="Assets\Asset Packs\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Asset Packs\SampleScenes\Shaders\Skybox-Procedural.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/pc-90/Documents/StarFalcon/StarFalcon/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -623,12 +656,6 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{0185AAD8-78CD-C04A-87AB-A2C1B599834D}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
