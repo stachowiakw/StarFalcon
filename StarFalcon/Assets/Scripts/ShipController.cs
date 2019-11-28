@@ -67,4 +67,9 @@ public class ShipController : MonoBehaviour
     {
         print("I collide bitch!");
     }
+
+      void OnTriggerEnter(Collider other)
+    {
+        print("I trigger bitch!");
+    }
 }
