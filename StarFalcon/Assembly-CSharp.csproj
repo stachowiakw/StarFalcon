@@ -95,6 +95,7 @@
      <Compile Include="Assets\Asset Packs\Standard Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Asset Packs\Standard Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Asset Packs\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\CollisionHandler.cs" />
      <Compile Include="Assets\Scripts\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\ShipController.cs" />
      <Compile Include="Assets\Scripts\SwapScenes.cs" />

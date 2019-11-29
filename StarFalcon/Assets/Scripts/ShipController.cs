@@ -62,14 +62,4 @@ public class ShipController : MonoBehaviour
         float roll = rollFromTrust;
         transform.localRotation = Quaternion.Euler(pitch,yaw,roll);
     }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        print("I collide bitch!");
-    }
-
-      void OnTriggerEnter(Collider other)
-    {
-        print("I trigger bitch!");
-    }
 }
