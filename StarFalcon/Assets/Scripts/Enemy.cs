@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollisionHandler : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -11,8 +11,9 @@ public class CollisionHandler : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   void OnParticleCollision (GameObject other)
+   {
+       print("DOSTAŁEM");
+       Destroy(gameObject);
+   }
 }

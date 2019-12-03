@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class ShipController : MonoBehaviour
 {
+    [SerializeField] GameObject guns;
     // Start is called before the first frame update
     [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 20f;
     [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 15f;
@@ -16,10 +18,6 @@ public class ShipController : MonoBehaviour
     [SerializeField] float rotRollThrowFactor = -40f;
 
     float xThrow, yThrow;
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -27,6 +25,19 @@ public class ShipController : MonoBehaviour
         setYpos();
         setXpos();
         ProcessRotation();
+        ProcessFire();
+    }
+
+    private void ProcessFire()
+    {
+        if(Input.GetKey(KeyCode.Space))
+        {
+            guns.SetActive(true);
+        }
+        else
+        {
+            guns.SetActive(false);
+        }
     }
 
     void setXpos()
@@ -35,7 +46,7 @@ public class ShipController : MonoBehaviour
         float xOffsetThisFrame = xThrow * xSpeed * Time.deltaTime;
         float rawNewXPos = Mathf.Clamp(transform.localPosition.x + xOffsetThisFrame, -maxRangeLR, maxRangeLR);
     
-        print(xOffsetThisFrame);
+        //print(xOffsetThisFrame);
         transform.localPosition = new Vector3(rawNewXPos, transform.localPosition.y, transform.localPosition.z);
     }
 
@@ -45,7 +56,7 @@ public class ShipController : MonoBehaviour
         float yOffsetThisFrame = yThrow * ySpeed * Time.deltaTime;
         float rawNewYPos = Mathf.Clamp(transform.localPosition.y + yOffsetThisFrame, -maxRangeUD, maxRangeUD);
        
-        print(yOffsetThisFrame);
+        //print(yOffsetThisFrame);
         transform.localPosition = new Vector3(transform.localPosition.x, rawNewYPos, transform.localPosition.z);
     }
 
