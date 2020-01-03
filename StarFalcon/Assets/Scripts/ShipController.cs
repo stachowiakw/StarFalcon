@@ -6,7 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class ShipController : MonoBehaviour
 {
-    [SerializeField] GameObject guns;
+    [SerializeField] GameObject[] guns;
     // Start is called before the first frame update
     [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 20f;
     [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 15f;
@@ -32,11 +32,19 @@ public class ShipController : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Space))
         {
-            guns.SetActive(true);
+            SetActiveGuns(true);
         }
         else
         {
-            guns.SetActive(false);
+            SetActiveGuns(false);
+        }
+    }
+
+    private void SetActiveGuns(bool isActive)
+    {
+        foreach (GameObject gun in guns)
+        { var gunEmmision = gun.GetComponent<ParticleSystem>().emission;
+            gunEmmision.enabled = isActive;
         }
     }
 
